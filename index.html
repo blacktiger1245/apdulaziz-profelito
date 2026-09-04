@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apdulaziz Mohamed Karar — Web Developer & Graphic Designer. Modern websites, responsive UI, branding and digital design." />
+  <meta name="author" content="Apdulaziz Mohamed Karar" />
+  <title>Apdulaziz Mohamed Karar — Web Developer &amp; Graphic Designer</title>
+  <link rel="icon" type="image/jpeg" href="karar.jpeg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-ring"></div>
+    <img class="preloader-logo" src="karar.jpeg" alt="Apdulaziz Mohamed Karar logo" />
+  </div>
+
+  <!-- Animated background -->
+  <div class="bg-shapes" aria-hidden="true">
+    <span class="shape shape-1"></span>
+    <span class="shape shape-2"></span>
+    <span class="shape shape-3"></span>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="navbar">
+    <a href="#home" class="nav__logo">
+      <img class="nav__logo-mark" src="karar.jpeg" alt="Apdulaziz Mohamed Karar logo" />
+      <span class="nav__logo-text">Apdulaziz<span>.</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#projects" class="nav__link">Work</a>
+      <a href="#design" class="nav__link">Design</a>
+      <a href="#education" class="nav__link">Education</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--sm nav__cta">Hire Me</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <span class="badge reveal"><i class="fa-solid fa-hand"></i> Hello, I'm</span>
+        <h1 class="hero__title reveal">Apdulaziz<br /><span class="grad-text">Mohamed Karar</span></h1>
+        <p class="hero__roles reveal">
+          <span class="roles-prefix">I'm a</span>
+          <span class="typed" data-text='["Web Developer","Graphic Designer","UI/UX Designer","Discord Developer"]'></span><span class="cursor">|</span>
+        </p>
+        <p class="hero__desc reveal">
+          A passionate Web Developer &amp; Graphic Designer crafting modern, responsive websites,
+          elegant user interfaces and high-quality visual designs that help brands stand out online.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn--ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+        </div>
+
+        <div class="hero__social reveal">
+          <a href="#" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="X / Twitter" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Discord" title="Discord"><i class="fa-brands fa-discord"></i></a>
+          <a href="#" aria-label="Behance" title="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+      <div class="hero__media reveal">
+        <div class="hero__avatar">
+          <img src="karar.jpeg" alt="Apdulaziz Mohamed Karar — profile photo" />
+        </div>
+        <div class="float-chip float-chip--1"><i class="fa-solid fa-code"></i> Web Development</div>
+        <div class="float-chip float-chip--2"><i class="fa-solid fa-palette"></i> Graphic Design</div>
+        <div class="float-chip float-chip--3"><i class="fa-brands fa-discord"></i> Discord</div>
+      </div>
+    </div>
+
+    <div class="container hero__stats reveal">
+      <div class="stat"><span class="stat__num" data-count="50">0</span><span class="stat__plus">+</span><span class="stat__label">Projects</span></div>
+      <div class="stat"><span class="stat__num" data-count="30">0</span><span class="stat__plus">+</span><span class="stat__label">Happy Clients</span></div>
+      <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__plus">+</span><span class="stat__label">Years Experience</span></div>
+      <div class="stat"><span class="stat__num" data-count="100">0</span><span class="stat__plus">+</span><span class="stat__label">Designs Delivered</span></div>
+    </div>
+  </section>
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">About Me</span>
+        <h2 class="section__title">Turning ideas into <span class="grad-text">digital experiences</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I'm <strong>Apdulaziz Mohamed Karar</strong>, a passionate Web Developer specializing in modern
+            web development, responsive websites, modern user interfaces and professional digital platforms.
+          </p>
+          <p>
+            As a Graphic Designer, I create high-quality visual designs, branding materials, social media
+            graphics, posters and other creative digital content. I combine clean code with strong design
+            principles to deliver products that are both beautiful and functional.
+          </p>
+          <div class="about__points">
+            <div><i class="fa-solid fa-check"></i> Clean, maintainable &amp; semantic code</div>
+            <div><i class="fa-solid fa-check"></i> Pixel-perfect, modern UI design</div>
+            <div><i class="fa-solid fa-check"></i> Fully responsive on every device</div>
+            <div><i class="fa-solid fa-check"></i> Fast, SEO-friendly performance</div>
+          </div>
+          <a href="#contact" class="btn btn--primary"><i class="fa-solid fa-download"></i> Let's Work Together</a>
+        </div>
+
+        <div class="about__info reveal">
+          <div class="info-card"><span class="info-card__icon"><i class="fa-solid fa-user"></i></span><div><small>Name</small><strong>Apdulaziz Mohamed Karar</strong></div></div>
+          <div class="info-card"><span class="info-card__icon"><i class="fa-solid fa-envelope"></i></span><div><small>Email</small><strong>hello@apdulazizkarar.com</strong></div></div>
+          <div class="info-card"><span class="info-card__icon"><i class="fa-solid fa-briefcase"></i></span><div><small>Profession</small><strong>Web Developer &amp; Designer</strong></div></div>
+          <div class="info-card"><span class="info-card__icon"><i class="fa-solid fa-globe"></i></span><div><small>Location</small><strong>Available Worldwide</strong></div></div>
+          <div class="info-card"><span class="info-card__icon"><i class="fa-solid fa-circle-check"></i></span><div><small>Status</small><strong class="accent">Open to Freelance</strong></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">My Skills</span>
+        <h2 class="section__title">Skills &amp; <span class="grad-text">technologies</span></h2>
+        <p class="section__sub">The tools and technologies I use to build and design exceptional digital products.</p>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skills__group reveal">
+          <h3 class="skills__heading"><i class="fa-solid fa-code"></i> Development</h3>
+          <div class="skill">
+            <div class="skill__top"><span>HTML5 &amp; CSS3</span><span>95%</span></div>
+            <div class="skill__bar"><span data-width="95%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>JavaScript</span><span>88%</span></div>
+            <div class="skill__bar"><span data-width="88%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>React &amp; Frontend</span><span>82%</span></div>
+            <div class="skill__bar"><span data-width="82%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Responsive Design</span><span>96%</span></div>
+            <div class="skill__bar"><span data-width="96%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Node.js &amp; Discord.js</span><span>80%</span></div>
+            <div class="skill__bar"><span data-width="80%"></span></div>
+          </div>
+        </div>
+
+        <div class="skills__group reveal">
+          <h3 class="skills__heading"><i class="fa-solid fa-palette"></i> Design</h3>
+          <div class="skill">
+            <div class="skill__top"><span>Adobe Photoshop</span><span>92%</span></div>
+            <div class="skill__bar"><span data-width="92%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Adobe Illustrator</span><span>88%</span></div>
+            <div class="skill__bar"><span data-width="88%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Branding &amp; Identity</span><span>90%</span></div>
+            <div class="skill__bar"><span data-width="90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>UI / UX Design</span><span>86%</span></div>
+            <div class="skill__bar"><span data-width="86%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Social Media &amp; Posters</span><span>94%</span></div>
+            <div class="skill__bar"><span data-width="94%"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills__badges reveal">
+        <span class="tech">HTML5</span><span class="tech">CSS3</span><span class="tech">JavaScript</span>
+        <span class="tech">React</span><span class="tech">Node.js</span><span class="tech">Discord.js</span>
+        <span class="tech">Git</span><span class="tech">Figma</span><span class="tech">Photoshop</span>
+        <span class="tech">Illustrator</span><span class="tech">UI/UX</span><span class="tech">Branding</span>
+      </div>
+    </div>
+  </section>
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Services</span>
+        <h2 class="section__title">What I can <span class="grad-text">do for you</span></h2>
+        <p class="section__sub">From complete websites to eye-catching visuals, here's how I help your brand grow.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-code"></i></span>
+          <h3>Web Development</h3>
+          <p>Modern, fast and secure websites built with clean code and the latest web technologies.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-mobile-screen"></i></span>
+          <h3>Responsive Design</h3>
+          <p>Websites that look and work flawlessly on desktops, tablets and every mobile device.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+          <h3>UI / UX Design</h3>
+          <p>Intuitive, beautiful user interfaces designed around real user needs and smooth experiences.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-pen-nib"></i></span>
+          <h3>Branding &amp; Identity</h3>
+          <p>Memorable logos and complete brand identities that make your business instantly recognizable.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-hashtag"></i></span>
+          <h3>Social Media Graphics</h3>
+          <p>Scroll-stopping posts, banners and campaign visuals tailored for every social platform.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service__icon"><i class="fa-solid fa-panorama"></i></span>
+          <h3>Posters &amp; Print</h3>
+          <p>High-quality posters, flyers and print-ready designs that communicate your message clearly.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Web Projects -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Portfolio</span>
+        <h2 class="section__title">Web development <span class="grad-text">projects</span></h2>
+        <p class="section__sub">A selection of modern websites and digital platforms I've designed and developed.</p>
+      </div>
+
+      <div class="projects__grid projects__grid--2">
+        <article class="project web-project reveal">
+          <div class="web-preview">
+            <div class="web-preview__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="web-preview__url">waryaagaming1223.code.run</span>
+            </div>
+            <div class="web-preview__body">
+              <img class="web-preview__img" src="wg1.png" alt="Waryaa Gaming Platform website preview" />
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Web Development</span>
+            <h3>Waryaa Gaming Platform</h3>
+            <p>A modern gaming platform and digital community website developed for Waryaa Gaming.</p>
+            <a href="https://p01--waryaagaming1223--w5kk4bgjlsdp.code.run/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+          </div>
+        </article>
+
+        <article class="project web-project reveal">
+          <div class="web-preview">
+            <div class="web-preview__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="web-preview__url">shantasomali.netlify.app</span>
+            </div>
+            <div class="web-preview__body">
+              <img class="web-preview__img" src="shantasomali.png" alt="Shanta Somali website preview" />
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Web Development</span>
+            <h3>Shanta Somali</h3>
+            <p>A modern website developed for the Shanta Somali gaming community.</p>
+            <a href="https://shantasomali.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+          </div>
+        </article>
+
+        <article class="project web-project reveal">
+          <div class="web-preview">
+            <div class="web-preview__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="web-preview__url">waryaagaming.netlify.app</span>
+            </div>
+            <div class="web-preview__body">
+              <img class="web-preview__img" src="wg2.png" alt="Waryaa Gaming website preview" />
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Web Development</span>
+            <h3>Waryaa Gaming</h3>
+            <p>A professional gaming and eFootball community platform developed for the Somali gaming community.</p>
+            <a href="https://waryaagaming.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+          </div>
+        </article>
+
+        <article class="project web-project reveal">
+          <div class="web-preview">
+            <div class="web-preview__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="web-preview__url">starcityporgg.netlify.app</span>
+            </div>
+            <div class="web-preview__body">
+              <img class="web-preview__img" src="starcity.png" alt="Star City website preview" />
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Web Development</span>
+            <h3>Star City</h3>
+            <p>A modern web platform designed and developed with a professional user experience and interface.</p>
+            <a href="https://starcityporgg.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--block"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Discord Development -->
+  <section class="section" id="discord">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Discord Development</span>
+        <h2 class="section__title">Discord <span class="grad-text">portfolio</span></h2>
+        <p class="section__sub">Custom Discord servers, bots and community platforms built for engagement and growth.</p>
+      </div>
+
+      <div class="projects__grid">
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="waryaa1.png" alt="Discord community server" loading="lazy" />
+            <div class="project__overlay">
+              <a href="#" class="project__link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Community Server</span>
+            <h3>Community Server Setup</h3>
+            <p>Professionally structured Discord server with roles, channels and automated moderation.</p>
+            <div class="project__tags"><span>Discord</span><span>Moderation</span><span>Roles</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="waryaa2.png" alt="Discord bot dashboard" loading="lazy" />
+            <div class="project__overlay">
+              <a href="#" class="project__link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Bot Dashboard</span>
+            <h3>Bot Dashboard UI</h3>
+            <p>Clean, modern dashboard interface for managing custom Discord bots and their features.</p>
+            <div class="project__tags"><span>UI Design</span><span>Discord</span><span>Dashboard</span></div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__thumb">
+            <img src="waryaa3.png" alt="Discord server branding" loading="lazy" />
+            <div class="project__overlay">
+              <a href="#" class="project__link" aria-label="View project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="project__body">
+            <span class="project__cat">Server Branding</span>
+            <h3>Discord Server Branding</h3>
+            <p>Complete visual branding for Discord communities — icons, banners and themed assets.</p>
+            <div class="project__tags"><span>Branding</span><span>Graphics</span><span>Discord</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Discord Bot Portfolio -->
+  <section class="section section--alt" id="bots">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Discord Bots</span>
+        <h2 class="section__title">Discord <span class="grad-text">bot portfolio</span></h2>
+        <p class="section__sub">Powerful, custom-built Discord bots with rich features that keep communities active and organized.</p>
+      </div>
+
+      <div class="bots__grid">
+        <article class="bot reveal">
+          <div class="bot__top">
+            <span class="bot__avatar"><i class="fa-solid fa-shield-halved"></i></span>
+            <div class="bot__meta">
+              <h3>Guardian</h3>
+              <span class="bot__status"><i class="fa-solid fa-circle"></i> Online</span>
+            </div>
+          </div>
+          <p class="bot__desc">A robust moderation &amp; security bot that keeps your server safe, clean and organized automatically.</p>
+          <ul class="bot__features">
+            <li><i class="fa-solid fa-check"></i> Auto-moderation &amp; anti-spam</li>
+            <li><i class="fa-solid fa-check"></i> Custom commands &amp; welcome messages</li>
+            <li><i class="fa-solid fa-check"></i> Role management &amp; logging</li>
+          </ul>
+          <a href="#" class="btn btn--discord btn--block"><i class="fa-brands fa-discord"></i> Add to Discord</a>
+        </article>
+
+        <article class="bot reveal">
+          <div class="bot__top">
+            <span class="bot__avatar"><i class="fa-solid fa-music"></i></span>
+            <div class="bot__meta">
+              <h3>Melody</h3>
+              <span class="bot__status"><i class="fa-solid fa-circle"></i> Online</span>
+            </div>
+          </div>
+          <p class="bot__desc">A high-quality music bot that streams your favorite tracks with a clean queue and easy controls.</p>
+          <ul class="bot__features">
+            <li><i class="fa-solid fa-check"></i> High-quality audio playback</li>
+            <li><i class="fa-solid fa-check"></i> Playlists, queue &amp; skip controls</li>
+            <li><i class="fa-solid fa-check"></i> Volume, loop &amp; shuffle options</li>
+          </ul>
+          <a href="#" class="btn btn--discord btn--block"><i class="fa-brands fa-discord"></i> Add to Discord</a>
+        </article>
+
+        <article class="bot reveal">
+          <div class="bot__top">
+            <span class="bot__avatar"><i class="fa-solid fa-ranking-star"></i></span>
+            <div class="bot__meta">
+              <h3>LevelUp</h3>
+              <span class="bot__status"><i class="fa-solid fa-circle"></i> Online</span>
+            </div>
+          </div>
+          <p class="bot__desc">A fun leveling &amp; engagement bot with XP, leaderboards and rewards to grow an active community.</p>
+          <ul class="bot__features">
+            <li><i class="fa-solid fa-check"></i> XP system &amp; level-up cards</li>
+            <li><i class="fa-solid fa-check"></i> Leaderboards &amp; rank roles</li>
+            <li><i class="fa-solid fa-check"></i> Economy, rewards &amp; giveaways</li>
+          </ul>
+          <a href="#" class="btn btn--discord btn--block"><i class="fa-brands fa-discord"></i> Add to Discord</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Graphic Design Gallery -->
+  <section class="section" id="design">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Graphic Design</span>
+        <h2 class="section__title">Design <span class="grad-text">gallery</span></h2>
+        <p class="section__sub">A curated collection of branding, posters and social media designs I've created.</p>
+      </div>
+
+      <div class="gallery__filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+        <button class="filter-btn" data-filter="poster">Poster</button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+      </div>
+
+      <div class="gallery__grid">
+        <figure class="gallery-item reveal" data-category="social">
+          <img src="eid.png" alt="Eid greeting design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Social Media</span>
+            <h3>Eid Greeting Design</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="social">
+          <img src="shareca.png" alt="Social media campaign design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Social Media</span>
+            <h3>Social Media Campaign</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="social">
+          <img src="somali.png" alt="Community social media design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Social Media</span>
+            <h3>Community Social Design</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="branding">
+          <img src="Artboard 1@3x.png" alt="Brand identity design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Branding</span>
+            <h3>Brand Identity</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="branding">
+          <img src="kg.png" alt="KG logo and brand identity" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Branding</span>
+            <h3>Logo &amp; Brand Identity</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="poster">
+          <img src="mustaf1.png" alt="Poster design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Poster</span>
+            <h3>Poster Design</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="poster">
+          <img src="mustaf2.png" alt="Creative poster design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Poster</span>
+            <h3>Creative Poster</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal" data-category="poster">
+          <img src="3.png" alt="Promotional poster design" loading="lazy" />
+          <figcaption class="gallery-item__overlay">
+            <span class="gallery-item__cat">Poster</span>
+            <h3>Promotional Poster</h3>
+            <button class="gallery-item__zoom" aria-label="View full image"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox__prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" />
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <button class="lightbox__next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+  <!-- Education -->
+  <section class="section section--alt" id="education">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Education</span>
+        <h2 class="section__title">Education &amp; <span class="grad-text">qualifications</span></h2>
+        <p class="section__sub">My academic background and the certifications that shaped my skills.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <span class="timeline__icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <div class="timeline__card">
+            <span class="timeline__date">Bachelor's Degree</span>
+            <h3>Computer Science</h3>
+            <p>Studied programming fundamentals, data structures, web technologies and software engineering principles.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__icon"><i class="fa-solid fa-code"></i></span>
+          <div class="timeline__card">
+            <span class="timeline__date">Certification</span>
+            <h3>Web Development</h3>
+            <p>Professional training in modern front-end and back-end development, responsive design and deployment.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__icon"><i class="fa-solid fa-palette"></i></span>
+          <div class="timeline__card">
+            <span class="timeline__date">Diploma</span>
+            <h3>Graphic Design</h3>
+            <p>Specialized education in visual communication, branding, layout design and digital creative tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__tag">Contact</span>
+        <h2 class="section__title">Let's work <span class="grad-text">together</span></h2>
+        <p class="section__sub">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <h3>Get in touch</h3>
+          <p>Fill out the form or reach out directly — I usually respond within 24 hours.</p>
+
+          <div class="contact__item">
+            <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+            <div><small>Email</small><strong>hello@apdulazizkarar.com</strong></div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div><small>Location</small><strong>Available Worldwide</strong></div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon"><i class="fa-brands fa-discord"></i></span>
+            <div><small>Discord</small><strong>@apdulaziz</strong></div>
+          </div>
+
+          <div class="contact__social">
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+          </div>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form__note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#home" class="nav__logo">
+        <img class="nav__logo-mark" src="karar.jpeg" alt="Apdulaziz Mohamed Karar logo" />
+        <span class="nav__logo-text">Apdulaziz<span>.</span></span>
+      </a>
+      <p class="footer__text">Web Developer &amp; Graphic Designer — crafting modern digital experiences.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#projects">Work</a>
+        <a href="#design">Design</a><a href="#contact">Contact</a>
+      </div>
+      <p class="footer__copy">&copy; <span id="year"></span> Apdulaziz Mohamed Karar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
