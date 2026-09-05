@@ -188,31 +188,27 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.key === 'ArrowRight') lightbox.querySelector('.lightbox__next').click();
   });
 
-  /* ---------- Contact form ---------- */
+  /* ---------- Contact form (WhatsApp) ---------- */
   const form = document.getElementById('contactForm');
   const formNote = document.getElementById('formNote');
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const subject = form.subject.value.trim();
-    const message = form.message.value.trim();
-    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  if (form && formNote) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const message = form.message.value.trim();
 
-    if (!name || !email || !subject || !message) {
-      formNote.textContent = 'Please fill in all fields.';
-      formNote.classList.add('error');
-      return;
-    }
-    if (!emailOk) {
-      formNote.textContent = 'Please enter a valid email address.';
-      formNote.classList.add('error');
-      return;
-    }
+      if (!name || !message) {
+        formNote.textContent = 'Please fill in your name and message.';
+        formNote.classList.add('error');
+        return;
+      }
 
-    formNote.classList.remove('error');
-    formNote.textContent = "Thanks, " + name + "! Your message has been sent — I'll get back to you soon.";
-    form.reset();
-  });
+      formNote.classList.remove('error');
+      const text = encodeURIComponent("Hi Apdulaziz! I'm " + name + ". " + message);
+      window.open('https://wa.me/252614912228?text=' + text, '_blank', 'noopener');
+      formNote.textContent = 'Opening WhatsApp — thanks for reaching out!';
+      form.reset();
+    });
+  }
 });
 

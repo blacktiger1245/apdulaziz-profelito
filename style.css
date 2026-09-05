@@ -653,6 +653,165 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .float-chip--3 { bottom: -2%; left: 2%; }
 }
 
+/* =========================================================
+   Enhanced portfolio — new components & refinements
+   ========================================================= */
+
+/* About — profile quote */
+.profile-quote {
+  text-align: center;
+  font-family: var(--font-head);
+  font-size: clamp(1.25rem, 2.6vw, 1.7rem);
+  font-weight: 600;
+  color: var(--text);
+  max-width: 780px;
+  margin: -16px auto 48px;
+  line-height: 1.4;
+}
+
+/* Subsection headings */
+.subsection__title {
+  display: flex; align-items: center; gap: 12px;
+  font-family: var(--font-head); font-size: 1.45rem; font-weight: 600;
+  margin: 0 0 20px;
+}
+.subsection__title i { color: var(--cyan); }
+.subsection__title--mt { margin-top: 64px; }
+
+/* Journey */
+.journey { max-width: 900px; margin: 64px auto 0; }
+.journey p { color: var(--muted); margin-bottom: 16px; }
+.community-chips { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.community-chip {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 10px 20px; border-radius: 100px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  font-size: 0.92rem; font-weight: 500; transition: all 0.25s ease;
+}
+.community-chip i { color: var(--cyan); }
+.community-chip:hover { border-color: var(--cyan); transform: translateY(-3px); }
+
+/* Strengths */
+.strengths__grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+}
+.strength {
+  padding: 26px 22px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+}
+.strength:hover { transform: translateY(-6px); border-color: rgba(99, 102, 241, 0.5); box-shadow: var(--shadow); }
+.strength__icon {
+  width: 48px; height: 48px; display: grid; place-items: center;
+  border-radius: 12px; background: var(--grad-soft); color: var(--cyan);
+  font-size: 1.15rem; margin-bottom: 16px;
+}
+.strength h3 { font-family: var(--font-head); font-size: 1.05rem; margin-bottom: 8px; }
+.strength p { color: var(--muted); font-size: 0.9rem; }
+
+/* Approach — 5 steps */
+.approach { max-width: 1000px; margin: 64px auto 0; }
+.approach__intro { color: var(--muted); max-width: 720px; margin-bottom: 34px; }
+.approach__steps {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr)); gap: 16px;
+}
+.approach__step {
+  padding: 26px 20px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform 0.28s ease, border-color 0.28s ease;
+}
+.approach__step:hover { transform: translateY(-6px); border-color: var(--cyan); }
+.approach__num {
+  font-family: var(--font-head); font-weight: 800; font-size: 2.1rem; line-height: 1;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+  display: block; margin-bottom: 14px;
+}
+.approach__step h4 { font-family: var(--font-head); font-size: 1.05rem; margin-bottom: 8px; }
+.approach__step p { color: var(--muted); font-size: 0.88rem; }
+
+/* Learning (Currently Learning) */
+.learning { max-width: 900px; margin: 64px auto 0; }
+.learning__intro { color: var(--muted); margin-bottom: 24px; }
+.learning__topics { display: flex; flex-wrap: wrap; gap: 12px; }
+.learning__topic {
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 20px; border-radius: 100px;
+  background: var(--surface); border: 1px solid var(--border); color: var(--text);
+  font-size: 0.92rem; font-weight: 500; transition: all 0.25s ease;
+}
+.learning__topic i { color: var(--cyan); }
+.learning__topic:hover { border-color: var(--violet); background: var(--grad-soft); transform: translateY(-3px); }
+.learning__note {
+  margin-top: 26px; padding: 14px 18px; border-radius: var(--radius-sm);
+  background: var(--grad-soft); border: 1px solid var(--border);
+  color: var(--muted); font-size: 0.9rem;
+}
+.learning__note i { color: var(--cyan); margin-right: 8px; }
+
+/* Service "Currently Learning" badge */
+.service__tag {
+  display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 100px;
+  background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.4); color: var(--gold);
+  margin-bottom: 14px;
+}
+
+/* Discord servers */
+.servers__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.server {
+  display: flex; flex-direction: column;
+  padding: 28px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--border);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.server:hover { transform: translateY(-8px); border-color: rgba(88, 101, 242, 0.5); box-shadow: var(--shadow); }
+.server__top { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+.server__avatar {
+  width: 56px; height: 56px; flex-shrink: 0; display: grid; place-items: center;
+  border-radius: 16px; background: var(--grad); color: #fff; font-size: 1.5rem;
+}
+.server__cat { display: block; font-size: 0.74rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--cyan); margin-bottom: 4px; }
+.server__meta h3 { font-family: var(--font-head); font-size: 1.2rem; }
+.server__desc { color: var(--muted); font-size: 0.94rem; margin-bottom: 16px; flex: 1; }
+.server .project__tags { margin-bottom: 20px; }
+
+/* Discord bots — updated card */
+.bot { padding: 0; overflow: hidden; }
+.bot__thumb { aspect-ratio: 16 / 9; overflow: hidden; background: var(--bg-2); border-bottom: 1px solid var(--border); }
+.bot__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+.bot:hover .bot__thumb img { transform: scale(1.06); }
+.bot__body { display: flex; flex-direction: column; flex: 1; padding: 24px; }
+.bot__body .bot__meta { margin-bottom: 14px; }
+.bot__body .bot__desc { margin-bottom: 18px; }
+
+/* Contact — clickable items + brand colors */
+.contact__item {
+  display: flex; align-items: center; gap: 16px; margin-bottom: 14px;
+  padding: 12px 14px; border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+.contact__item:hover { transform: translateX(6px); background: var(--surface-2); border-color: var(--border); }
+.contact__icon--whatsapp { background: rgba(37, 211, 102, 0.16); color: #25d366; }
+.contact__icon--facebook { background: rgba(24, 119, 242, 0.16); color: #1877f2; }
+.contact__icon--instagram { background: rgba(225, 48, 108, 0.16); color: #e1306c; }
+.contact__icon--linkedin { background: rgba(10, 102, 194, 0.16); color: #0a66c2; }
+.contact__icon--snapchat { background: rgba(255, 252, 0, 0.14); color: #fffc00; }
+.contact__icon--gmail { background: rgba(234, 67, 53, 0.16); color: #ea4335; }
+.contact__form h3 { font-family: var(--font-head); font-size: 1.4rem; margin-bottom: 10px; }
+.contact__form > p { color: var(--muted); margin-bottom: 26px; }
+
+/* ===== Responsive refinements ===== */
+@media (max-width: 1024px) {
+  .servers__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .servers__grid { grid-template-columns: 1fr; }
+  .subsection__title { font-size: 1.25rem; }
+  .approach__steps { grid-template-columns: 1fr; }
+}
+
 
 
 
